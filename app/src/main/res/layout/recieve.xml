@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <EditText
+        android:id="@+id/etSend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Enter anything" />
+
+
+<!--    layout_below shifts the btnStart to below of etSend-->
+<!--        alignParentRight will shift the button to right of Parent(etSend) values only true and false-->
+
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etSend"
+        android:layout_alignParentRight="true"
+        android:text="Run Activity" />
+
+
+<!--    alignTop will only align the widget to the top w.r.t btnStart -->
+<!--    toLeftOf will shift the widget to the left-->
+
+
+    <Button
+        android:id="@+id/btnResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnStart"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="110dp"
+        android:layout_toLeftOf="@+id/btnStart"
+        android:text="Run For Result" />
+
+    <TextView
+        android:id="@+id/tvGot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnResult"
+        android:text="TextView" />
+</RelativeLayout>
